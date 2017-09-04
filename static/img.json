@@ -1,3 +1,16 @@
 {
-	"img": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_203617292.jpg"
+	"data":[
+		{
+			"img": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_203617292.jpg"
+		},
+		{
+			"img": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_203605063.jpg"
+		},
+		{
+			"img": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_203647055.jpg"
+		},
+		{
+			"img": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_50_300_203650929.jpg"
+		}
+	]
 }

@@ -1,24 +1,41 @@
 <template>
-    <div class="wraper">
-        <div class="scroll">
-            <div class="tab">
-                <img :src="tabImg" width="100%" height="100%">
-                <a href="#">刷新可以改变list的数量</a>
-            </div>
-            <ul class="content">
-                <li v-for="item in list1">
-                    <div class="img">
-                        <img :src="item.picUrl" width="100%" height="100%">
-                    </div>
-                    <div class="desc">
-                        <p>
-                            {{item.topTitle}}
-                        </p>
-                    </div>
-                </li> 
+    <div class="root">
+        <div class="wraper">
+            <div class="scroll">
+                <div class="tab">
+                    <!-- <img :src="tabImg" width="100%" height="100%"> --> 
+                    <!-- <a href="#">刷新可以改变list的数量</a> -->
+                    <el-carousel :interval="5000" 
+                                arrow="never"  
+                                height="200px">
+                        <el-carousel-item v-for="(item,index) in tabImg" :key="index"> 
+                            <img :src="item.img" width="100%" height="100%"> 
+                        </el-carousel-item>
+                    </el-carousel> 
+                </div>
+                <ul class="content">
+                    <li v-for="item in list1">
+                        <div class="img">
+                            <img :src="item.picUrl" width="100%" height="100%">
+                        </div>
+                        <div class="desc">
+                            <p>
+                                {{item.topTitle}}
+                            </p>
+                        </div>
+                    </li> 
+                </ul>
+            </div> 
+        </div>
+        <div class="wraper2">
+            <ul class="h">
+                <li v-for="item in list1" class="hLi">
+                    <img :src="item.picUrl" width="100%" height="100%">
+                </li>
             </ul>
-        </div> 
+        </div>
     </div>
+    
 </template>
 
 <script>
@@ -35,7 +52,7 @@ export default {
     data() {
         return {
             list: [],
-            tabImg: ''
+            tabImg: []
         }
     },
     computed: { 
@@ -50,7 +67,25 @@ export default {
     },
     methods: {
         initBscoll() {
-            let scroll = new Bscoll('.wraper')
+            let scroll = new Bscoll('.wraper', {
+                scrollY: true,
+                click: true
+            }); 
+        },
+        /**
+         * 横向的滚动，需要等数据加载回来并且dom更新之后，再去获取ul的宽度
+         * ul如果宽度不会，就不能滑动
+         */
+        initHscroll() {
+            let liNum = document.getElementsByClassName('hLi');
+            let liWidth = liNum[0].offsetWidth;
+            let ul = document.getElementsByClassName('h');
+            let gasDis = liNum.length*2;
+            let ulWidth = gasDis + liNum.length*liWidth; 
+            ul[0].style.width = ulWidth + 'px'; 
+            let Hscroll = new Bscoll('.wraper2', {
+                scrollX: true
+            });
         },
         getListData() {
             var _this = this; 
@@ -58,13 +93,14 @@ export default {
                 _this.list = res.data.data.topList; 
                 _this.$nextTick(function(){
                     _this.initBscoll();
+                    _this.initHscroll();
                 })  
             }) 
         },
         getImgData() {
             var _this = this; 
             _this.$http.get('../../static/img.json').then((res)=>{
-                _this.tabImg = res.data.img;  
+                _this.tabImg = res.data.data;  
             })  
         }
     }
@@ -80,16 +116,20 @@ export default {
     }
     .wraper{
         width: 90%;
-        height: 500px; 
+        height: 400px; 
         background-color: #eee;
         margin: 0 auto;
         overflow: hidden;
-    }
+    } 
     .tab{
         width: 100%;
         height: 200px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         position: relative;
+    }
+    .Carousel{
+        width: 100%;
+        height: 200px;
     }
     .tab a{
         position: absolute;
@@ -116,5 +156,22 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .wraper2{
+        width: 90%;
+        height: 80px; 
+        margin: 10px auto;
+        overflow: hidden; 
+    }
+    .h{
+        /*width: 1350px;*/
+        height: 80px; 
+        overflow: hidden;
+        display: flex;
     } 
+    .h li{
+        flex: 0 0 88px; 
+        height: 80px; 
+        margin-right: 2px;
+    }
 </style>
