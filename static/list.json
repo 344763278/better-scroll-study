@@ -1,0 +1,293 @@
+{
+    "code": 0,
+    "subcode": 0,
+    "message": "",
+    "default": 0,
+    "data": {
+        "topList": [{
+            "id": 4,
+            "listenCount": 19800000,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_203617292.jpg",
+            "songList": [{
+                "singername": "校长",
+                "songname": "带你去旅行"
+            },
+            {
+                "singername": "吴亦凡/BrAnT.B/Tizzy T",
+                "songname": "三年二班 (Live)"
+            },
+            {
+                "singername": "VAVA",
+                "songname": "Life's A Struggle (Live)"
+            }],
+            "topTitle": "巅峰榜·流行指数",
+            "type": 0
+        },
+        {
+            "id": 26,
+            "listenCount": 19700000,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_203605063.jpg",
+            "songList": [{
+                "singername": "TFBOYS",
+                "songname": "我们的时光"
+            },
+            {
+                "singername": "金志文",
+                "songname": "远走高飞 (独唱版)"
+            },
+            {
+                "singername": "薛明媛/朱贺",
+                "songname": "非酋"
+            }],
+            "topTitle": "巅峰榜·热歌",
+            "type": 0
+        },
+        {
+            "id": 27,
+            "listenCount": 15842520,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_203647055.jpg",
+            "songList": [{
+                "singername": "Justin Bieber/BloodPop®",
+                "songname": "Friends"
+            },
+            {
+                "singername": "校长",
+                "songname": "带你去旅行"
+            },
+            {
+                "singername": "黄龄",
+                "songname": "你可知道"
+            }],
+            "topTitle": "巅峰榜·新歌",
+            "type": 0
+        },
+        {
+            "id": 50,
+            "listenCount": 10239220,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_50_300_203650929.jpg",
+            "songList": [{
+                "singername": "吴亦凡/BrAnT.B/Tizzy T",
+                "songname": "三年二班 (Live)"
+            },
+            {
+                "singername": "VAVA",
+                "songname": "Life's A Struggle (Live)"
+            },
+            {
+                "singername": "张震岳/MC HotDog/BooM黄旭/GAI",
+                "songname": "凡人歌 (Live)"
+            }],
+            "topTitle": "巅峰榜·中国有嘻哈",
+            "type": 0
+        },
+        {
+            "id": 51,
+            "listenCount": 9200000,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_51_300_203451421.jpg",
+            "songList": [{
+                "singername": "毛不易",
+                "songname": "消愁 (Live)"
+            },
+            {
+                "singername": "毛不易",
+                "songname": "二零三 (Live)"
+            },
+            {
+                "singername": "毛不易",
+                "songname": "像我这样的人 (Live)"
+            }],
+            "topTitle": "巅峰榜·明日之子",
+            "type": 0
+        },
+        {
+            "id": 25,
+            "listenCount": 10034730,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_25_300_203649565.jpg",
+            "songList": [{
+                "singername": "陈颖恩",
+                "songname": "时间有泪 (Live)"
+            },
+            {
+                "singername": "李雅",
+                "songname": "越过山丘 (Live)"
+            },
+            {
+                "singername": "夏启明",
+                "songname": "全世界谁倾听你 (Live)"
+            }],
+            "topTitle": "巅峰榜·中国新歌声",
+            "type": 0
+        },
+        {
+            "id": 28,
+            "listenCount": 14839880,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_28_300_203504622.jpg",
+            "songList": [{
+                "singername": "薛明媛/朱贺",
+                "songname": "欧皇"
+            },
+            {
+                "singername": "赵方婧",
+                "songname": "尽头"
+            },
+            {
+                "singername": "赵方婧",
+                "songname": "直觉"
+            }],
+            "topTitle": "巅峰榜·网络歌曲",
+            "type": 0
+        },
+        {
+            "id": 5,
+            "listenCount": 9260140,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_203605063.jpg",
+            "songList": [{
+                "singername": "TFBOYS",
+                "songname": "我们的时光"
+            },
+            {
+                "singername": "陈翔",
+                "songname": "异想"
+            },
+            {
+                "singername": "刘亦菲/杨洋",
+                "songname": "三生三世十里桃花"
+            }],
+            "topTitle": "巅峰榜·内地",
+            "type": 0
+        },
+        {
+            "id": 6,
+            "listenCount": 4399300,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_203610204.jpg",
+            "songList": [{
+                "singername": "潘玮柏/吴昕",
+                "songname": "稀罕没理由"
+            },
+            {
+                "singername": "陶喆",
+                "songname": "黑色星期二"
+            },
+            {
+                "singername": "岑宁儿",
+                "songname": "追光者"
+            }],
+            "topTitle": "巅峰榜·港台",
+            "type": 0
+        },
+        {
+            "id": 3,
+            "listenCount": 10683260,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_3_300_203172561.jpg",
+            "songList": [{
+                "singername": "Charli XCX",
+                "songname": "Boys"
+            },
+            {
+                "singername": "Kesha",
+                "songname": "Learn To Let Go"
+            },
+            {
+                "singername": "Martin Garrix/Troye Sivan",
+                "songname": "There For You"
+            }],
+            "topTitle": "巅峰榜·欧美",
+            "type": 0
+        },
+        {
+            "id": 16,
+            "listenCount": 7601500,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_16_300_203508332.jpg",
+            "songList": [{
+                "singername": "WINNER (위너)",
+                "songname": "LOVE ME LOVE ME"
+            },
+            {
+                "singername": "킬라그램 (Killah Gramz)/딘 (DEAN)/지코 (Zico)",
+                "songname": "어디 (哪里)"
+            },
+            {
+                "singername": "한해 (HANHAE)/다이나믹 듀오 (Dynamic Duo)/김청하 (金请夏)/뮤지",
+                "songname": "로비로모여 (集合到大厅)"
+            }],
+            "topTitle": "巅峰榜·韩国",
+            "type": 0
+        },
+        {
+            "id": 17,
+            "listenCount": 1808100,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_17_300_203107972.jpg",
+            "songList": [{
+                "singername": "中島美嘉 (なかしま みか)",
+                "songname": "电光石火之间"
+            },
+            {
+                "singername": "MACO (まこ)",
+                "songname": "恋の道 (恋爱的道路)"
+            },
+            {
+                "singername": "宇多田ヒカル (宇多田光)",
+                "songname": "Forevermore"
+            }],
+            "topTitle": "巅峰榜·日本",
+            "type": 0
+        },
+        {
+            "id": 201,
+            "listenCount": 358135,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/20150127163830.jpg",
+            "songList": [{
+                "singername": "鹿晗",
+                "songname": "零界点（On fire）"
+            },
+            {
+                "singername": "吴亦凡",
+                "songname": "6"
+            },
+            {
+                "singername": "崔子格",
+                "songname": "生死相随 (《秦时丽人明月心》电视剧片尾曲)"
+            }],
+            "topTitle": "巅峰榜·MV",
+            "type": 0
+        },
+        {
+            "id": 32,
+            "listenCount": 4021580,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_32_300_104861467.jpg",
+            "songList": [{
+                "singername": "齐一",
+                "songname": "这个年纪"
+            },
+            {
+                "singername": "南征北战",
+                "songname": "独一无二"
+            },
+            {
+                "singername": "南征北战",
+                "songname": "我的天空"
+            }],
+            "topTitle": "巅峰榜·音乐人",
+            "type": 0
+        },
+        {
+            "id": 36,
+            "listenCount": 3919460,
+            "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_36_300_200732007.jpg",
+            "songList": [{
+                "singername": "左慧晨",
+                "songname": "天空之城"
+            },
+            {
+                "singername": "郑阳亭",
+                "songname": "你那么爱他"
+            },
+            {
+                "singername": "姜真祖",
+                "songname": "成都"
+            }],
+            "topTitle": "巅峰榜·K歌金曲",
+            "type": 0
+        }]
+    }
+}
