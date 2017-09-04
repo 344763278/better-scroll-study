@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Axios from 'axios'
-// import { Carousel, Button } from 'element-ui'
+import Axios from 'axios' 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+import Load from './components/loading/index.js'
+import myTem from './components/tem/index.js'
 
+Vue.use(Load)
+Vue.use(myTem)
 Vue.use(ElementUI) 
 Vue.prototype.$http = Axios
 Vue.config.productionTip = false

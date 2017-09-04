@@ -1,10 +1,8 @@
 <template>
-    <div class="root">
+    <div class="root"> 
         <div class="wraper">
             <div class="scroll">
-                <div class="tab">
-                    <!-- <img :src="tabImg" width="100%" height="100%"> --> 
-                    <!-- <a href="#">刷新可以改变list的数量</a> -->
+                <div class="tab"> 
                     <el-carousel :interval="5000" 
                                 arrow="never"  
                                 height="200px">
@@ -26,13 +24,17 @@
                     </li> 
                 </ul>
             </div> 
-        </div>
+        </div>  
         <div class="wraper2">
             <ul class="h">
                 <li v-for="item in list1" class="hLi">
                     <img :src="item.picUrl" width="100%" height="100%">
                 </li>
             </ul>
+        </div>
+        <div class="loadTest"> 
+            <!-- <loading></loading> -->
+            <myTem v-show="loadingShow"></myTem>
         </div>
     </div>
     
@@ -52,7 +54,8 @@ export default {
     data() {
         return {
             list: [],
-            tabImg: []
+            tabImg: [],
+            loadingShow: true
         }
     },
     computed: { 
@@ -64,6 +67,7 @@ export default {
     mounted() { 
         this.getListData();
         this.getImgData();
+        // this.loadPoxy();
     },
     methods: {
         initBscoll() {
@@ -89,20 +93,33 @@ export default {
         },
         getListData() {
             var _this = this; 
-            _this.$http.get('../../static/list.json').then(function(res){
-                _this.list = res.data.data.topList; 
-                _this.$nextTick(function(){
-                    _this.initBscoll();
-                    _this.initHscroll();
-                })  
-            }) 
+            setTimeout(function(){
+                _this.$http.get('../../static/list.json').then(function(res){
+                    _this.list = res.data.data.topList; 
+                    _this.loadingShow = false;
+                    _this.$nextTick(function(){
+                        _this.initBscoll();
+                        _this.initHscroll();
+                    })  
+                })
+            },2000)
+             
         },
         getImgData() {
             var _this = this; 
-            _this.$http.get('../../static/img.json').then((res)=>{
-                _this.tabImg = res.data.data;  
-            })  
+            setTimeout(function(){
+                _this.$http.get('../../static/img.json').then((res)=>{
+                    _this.tabImg = res.data.data;
+                    _this.loadingShow = false;  
+                }) 
+            },2000)
+             
         }
+        /*loadPoxy() {
+            this.$http.get('/api/product/list.do?keyword=手机').then(function(res){
+                console.log(res)
+            })
+        }*/
     }
 }
 </script>
@@ -114,10 +131,12 @@ export default {
         margin: 0;
         list-style: none;
     }
+    body{
+        background-color: #999;
+    }
     .wraper{
         width: 90%;
-        height: 400px; 
-        background-color: #eee;
+        height: 400px;  
         margin: 0 auto;
         overflow: hidden;
     } 
